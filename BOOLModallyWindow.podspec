@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BOOLModallyWindow"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "Maybe this is the most decoupled solution to present a window modally. "
   s.description      = <<-DESC
                        Maybe this is the most decoupled solution to present a window modally. Give rights to yourself to custom animation and view. Supports status bar hide or display. Good adaptation for device rotation.
