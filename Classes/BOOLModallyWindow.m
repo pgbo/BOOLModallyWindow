@@ -194,6 +194,7 @@
     
     _window = [[UIWindow alloc]initWithFrame:windowFrame];
     _window.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    _window.windowLevel = UIWindowLevelStatusBar+1;
     
     _windowRootVC = [[BOOLModallyWindowRootVC alloc]initWithPrefersStatusBarHidden:_preferStatusBarHidden
                                                           preferStatusBarStyle:_preferStatusBarStyle

@@ -40,7 +40,7 @@
                                     supportedOrientationPortraitUpsideDown:NO
                                          supportedOrientationLandscapeLeft:NO
                                         supportedOrientationLandscapeRight:NO
-                                                          windowEdgeInsets:UIEdgeInsetsMake(40, 10, 100, 10)];
+                                                          windowEdgeInsets:UIEdgeInsetsMake(0, 10, 100, 10)];
         _modelWindow.modallyWindowDelegate = self;
         
         UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.bounds), 64)];
@@ -73,6 +73,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - BOOLModallyWindowDelegate
+
+- (void)modallyWindowDidDismiss:(BOOLModallyWindow *)modallyWindow
+{
+    NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 @end
